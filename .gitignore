@@ -129,3 +129,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# ignore test.ipynb - IPython Notebook File: for package implementation and testing
+test.ipynb
+
+# ignore API-Key (stored in File), any new users are required to create their own
+API-KEY
