@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>taiyo.api package &#8212; taiyo 0.0.1-alpha documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="taiyo.commons package" href="taiyo.commons.html" />
+    <link rel="prev" title="taiyo package" href="taiyo.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="taiyo-api-package">
+<h1>taiyo.api package<a class="headerlink" href="#taiyo-api-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="module-taiyo.api">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-taiyo.api" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="taiyo.api.base_configuration">
+<em class="property">class </em><code class="sig-prename descclassname">taiyo.api.</code><code class="sig-name descname">base_configuration</code><a class="headerlink" href="#taiyo.api.base_configuration" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Create an Object for API Calls</p>
+<p>For ease of access, all the attributes are to be inserted during the input() Calls</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>user_name</strong> (<em>str</em>) – User Name of the User by which the API Key is Registered</p></li>
+<li><p><strong>location</strong> (<em>list</em><em> or </em><em>tuple</em>) – Location at which the Data is to be Fetched from, in the format (latitude, longitude)</p></li>
+</ul>
+</dd>
+</dl>
+<p>These are internally modified and are associated with the attribute lat and lon respectively</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>year</strong> (<em>str</em>) – Year of which the Data is Required to Fetch</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="taiyo.api.base_configuration.generate_url">
+<em class="property">property </em><code class="sig-name descname">generate_url</code><a class="headerlink" href="#taiyo.api.base_configuration.generate_url" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generate the Formatted URL that is required by NREL API to Fetch the Required Data</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="taiyo.api.base_configuration.location">
+<em class="property">property </em><code class="sig-name descname">location</code><a class="headerlink" href="#taiyo.api.base_configuration.location" title="Permalink to this definition">¶</a></dt>
+<dd><p>Location from which the Data is to be Fetched</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>location</strong> – Location, which is as provided by the user in the format (lat, lon)</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">taiyo</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="taiyo.html">taiyo package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="taiyo.html#subpackages">Subpackages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="taiyo.html#module-taiyo">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  <li><a href="taiyo.html">taiyo package</a><ul>
+      <li>Previous: <a href="taiyo.html" title="previous chapter">taiyo package</a></li>
+      <li>Next: <a href="taiyo.commons.html" title="next chapter">taiyo.commons package</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, Debmalya Pramanik.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.1.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/taiyo.api.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
