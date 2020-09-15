@@ -1,5 +1,5 @@
-taiyo.api package
-=================
+API Overview
+============
 
 Module contents
 ---------------

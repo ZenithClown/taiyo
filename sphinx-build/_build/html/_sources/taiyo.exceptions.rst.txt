@@ -1,5 +1,5 @@
-taiyo.exceptions package
-========================
+Taiyō Exceptions
+================
 
 Module contents
 ---------------

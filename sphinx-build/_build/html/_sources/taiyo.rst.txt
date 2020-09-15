@@ -1,5 +1,5 @@
-taiyo package
-=============
+Taiyō: NREL API
+===============
 
 Subpackages
 -----------
@@ -8,10 +8,8 @@ Subpackages
    :maxdepth: 4
 
    taiyo.api
-   taiyo.commons
-   taiyo.core
+   taiyo.functions
    taiyo.exceptions
-   taiyo.libs
 
 Module contents
 ---------------

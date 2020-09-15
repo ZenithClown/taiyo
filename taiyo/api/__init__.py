@@ -2,21 +2,22 @@ import os
 
 class base_configuration:
     '''Create an Object for API Calls
-    
-    Input/Attributes
-    ----------------
-    For ease of access, all the attributes are to be inserted during the input() Calls
+
+    NREL requires various parameters which has to be supplied (as and where required) to
+    fetch the required data from its website. For this, base_configuration class is defined,
+    which has to be initialized just after importing taiyo.
 
     :type  user_name: str
     :param user_name: User Name of the User by which the API Key is Registered
 
     :type  location: list or tuple
     :param location: Location at which the Data is to be Fetched from, in the format (latitude, longitude)
-    These are internally modified and are associated with the attribute lat and lon respectively
+                     These are internally modified and are associated with the attribute lat and lon respectively
 
     :type  year: str
     :param year: Year of which the Data is Required to Fetch
     '''
+    
     def __init__(self):
         self.user_name = input('Full Name: ').strip().replace(' ', '+') # get the user name, and remove trailing spaces
         self.lat, self.lon = [float(i) for i in input('Location: ').split()] # location in comma delimitted format
